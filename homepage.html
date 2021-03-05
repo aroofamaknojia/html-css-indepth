@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="AssignHub, online calendar, students, BTG, mental health, study groups, crowdsource">
+	<meta name="description" content="AssignHub is an interactive calendar that allows you to crowdsource your assignments, checks up on your mental health, and allows you to form study groups.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assign Hub</title>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+	<style>
+		#text-1 {
+			position: relative;
+			width: 400px;
+			top: 125px;
+			left: 80px;
+			z-index: 1;
+			font-size: 25pt;
+			text-align: center;
+			color: #5d75bc;
+		}
+		#learn-more a{
+			font-size: 125%;
+			padding: 20px;
+			color: #25283D;
+			line-height: 45px;
+			background-color: #E0E0E2;
+			position: relative;
+			top: 125px;
+			left: 170px;
+			z-index: 1;
+			text-align: center;
+			box-shadow: 2px 2px 2px #888888;
+			font-family: "Overpass Mono", monospace;
+			text-decoration: none;
+		}
+		#learn-more a:hover {
+			text-decoration: none;
+			background-color: #25283D;
+			color: #E0E0E2;
+			box-shadow: 3px 3px 3px #070F26;
+			font-family: "Overpass Mono", monospace;
+		}
+		#text-2 {
+			color: #5D75BC;
+			font-size: 35pt;
+			margin-left: 70px;
+		}
+		.number {
+			float: left;
+			width: 150px;
+			color: #25283D;
+			font-family: "Overpass Mono", monospace;
+		}
+		.feature {
+			float: left;
+			width: 700px;
+			color: #25283D;
+			font-family: "Overpass Mono", monospace;
+		}
+		.more-info {
+			float: left;
+			color: #25283D;
+			width: 50px;
+			height: 50px;
+			padding-right: 40px;
+			padding-left: 65px;
+			font-family: "Overpass Mono", monospace;
+		}
+		.common-feature {
+			margin-left: 175px;
+			font-size: 16pt;
+			color: #25283D;
+			height: 140px;
+			padding-bottom: 10px;
+		}
+		#text-3 {
+			color: #5d75bc;
+			transform: rotate(90deg);
+			float: left;
+			font-size: 30pt;
+			margin-top: 75px;
+			margin-left: 50px;
+		}
+		#features {
+			float: left;
+			background-color: #E0E0E2;
+			border: 1px solid #BFBFBF;
+			padding-bottom: 75px;
+		}
+		.description {
+			font-size: 8pt;
+			visibility: hidden;
+			width: 675px;
+			margin-left: 150px;
+			color: #5D75BC;
+			font-family: "Overpass Mono", monospace;
+		}
+		#last-descript {
+			margin-left: 150px;
+		}
+		.more-info:hover + .description{
+			visibility: visible;
+		}
+		hr {
+			border: 1px solid #25283D;
+		}
+		#text-4 {
+			color: #5D75BC;
+			transform: rotate(-90deg);
+			float: left;
+			font-size: 30pt;
+			margin-top: 100px;
+			margin-right: 50px;
+		}
+		#people-op {
+			float: left;
+			background-color: #FBB03B;
+			padding: 25px 75px;
+		}
+		#text-5 {
+			color: #5D75BC;
+			float: right;
+			font-size: 35pt;
+			text-align: center;
+		}
+		.horizontal {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			border-radius: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.vertical {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			border-radius: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.common-img {
+			border-color: #BFBFBF;
+			width: 100%;
+			height: auto;
+			margin-top: -50px;
+		}
+		.common-horizontal {
+			width: auto;
+			height: 100%;
+			margin-left: -50px;
+		}
+		.testimonial-example {
+			float: left;
+			padding: 50px;
+			width: 236px;
+			text-align: center;
+			color: #25283D;
+			font-family: "Overpass Mono", monospace;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h3 {
+			font-size: 16pt;
+		}
+		@media(max-width: 1024px) {
+			#text-1 {
+				font-size: 16pt;
+			}
+			#learn-more a {
+				left: 140px;
+				padding: 10px;
+				font-size: 14pt;
+				line-height: 50px;
+			}
+			#text-2 {
+				font-size: 25pt;
+				margin-left: 30px;
+			}
+			.number {
+				width: 100px;
+
+			}
+			.feature {
+				width: 600px;
+
+			}
+			.more-info {
+				padding-left: 40px;
+				padding-right: 0px;
+
+			}
+			.common-feature {
+				margin-left: 75px;
+				font-size: 14pt;
+				height: 160px;
+			}
+			#text-3 {
+				font-size: 23pt;
+				margin-left: 20px;
+			}
+			#features {
+				padding-bottom: 50px;
+			}
+			.description{
+				width: 600px;
+				margin-left: 100px;
+				font-size: 9pt;
+			}
+			#last-descript {
+				margin-left: 100px;
+			}
+			#text-4 {
+				font-size: 23pt;
+				margin-right: 0px;
+			}
+			#people-op {
+				padding: 25px 25px;
+			}
+			#text-5 {
+				font-size: 25pt;
+			}
+			.horizontal {
+				width: 150px;
+				height: 150px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.vertical {
+				width: 150px;
+				height: 150px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.common-horizontal {
+				margin-left: -40px;
+			}
+			.testimonial-example {
+				width: 215px;
+				padding: 25px;
+			}
+		}
+		@media(max-width: 768px) {
+			#text-1 {
+				font-size: 12pt;
+				top: 75px;
+			}
+			#learn-more a{
+				width: 100px;
+				height: 50px;
+				font-size: 10pt;
+				line-height: 50px;
+				top: 75px;
+				left: 120px;
+			}
+			#text-2 {
+				font-size: 20pt;
+				margin-left: 30px;
+			}
+			.number {
+				width: 75px;
+
+			}
+			.feature {
+				width: 400px;
+
+			}
+			.more-info {
+				padding-left: 40px;
+				padding-right: 0px;
+
+			}
+			.common-feature {
+				margin-left: 50px;
+				font-size: 12pt;
+				height: 180px;
+			}
+			#text-3 {
+				font-size: 20pt;
+				margin-left: 25px;
+			}
+			#features {
+				padding-bottom: 25px;
+			}
+			.description{
+				width: 400px;
+				margin-left: 75px;
+				font-size: 8pt;
+			}
+			#last-descript {
+				margin-left: 75px;
+			}
+			#text-4 {
+				font-size: 20pt;
+				margin-right: 0px;
+			}
+			#people-op {
+				padding: 20px 20px;
+			}
+			#text-5 {
+				font-size: 20pt;
+			}
+			.horizontal {
+				width: 125px;
+				height: 125px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.vertical {
+				width: 125px;
+				height: 125px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.common-horizontal {
+				margin-left: -35px;
+			}
+			.common-img {
+				margin-top: -30px;
+			}
+			.testimonial-example {
+				width: 150px;
+				padding: 20px;
+				font-size: 10pt;
+			}
+
+		}
+		@media(max-width: 425px) {
+			#text-1 {
+				font-size: 6pt;
+				top: 45px;
+				left: 30px;
+			}
+			#learn-more a{
+				padding: 5px;
+				font-size: 5pt;
+				line-height: 25px;
+				top: 45px;
+				left: 55px;
+			}
+			#text-2 {
+				font-size: 15pt;
+				margin-left: 25px;
+			}
+			.number {
+				width: 30px;
+
+			}
+			.feature {
+				width: 225px;
+
+			}
+			.more-info {
+				padding-left: 25px;
+				padding-right: 0px;
+
+			}
+			.common-feature {
+				margin-left: 25px;
+				font-size: 10pt;
+				height: 200px;
+			}
+			#text-3 {
+				font-size: 12pt;
+				margin-left: 0px;
+			}
+			#features {
+				padding-bottom: 50px;
+			}
+			.description{
+				width: 225px;
+				margin-left: 35px;
+				font-size: 7pt;
+			}
+			#last-descript {
+				margin-left: 35px;
+			}
+			#text-4 {
+				font-size: 12pt;
+				margin-right: 0px;
+			}
+			#people-op {
+				padding: 10px 10px;
+			}
+			#text-5 {
+				font-size: 15pt;
+			}
+			.horizontal {
+				width: 150px;
+				height: 150px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.vertical {
+				width: 150px;
+				height: 150px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.common-horizontal {
+				margin-left: -35px;
+			}
+			.common-img {
+				margin-top: -30px;
+			}
+			.testimonial-example {
+				width: 272.21px;
+				padding: 20px;
+				font-size: 10pt;
+				float: none;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="menu">
+			<a href="homepage.html">home</a>
+		</div>
+		<div class="menu">
+			<a href="second_page.html">about</a>
+		</div>
+		<div class="menu" id="logo_style">
+		<a href="homepage.html">
+			<img src="img/AssignHubLogo.png" id="logo" alt="Assign Hub Logo">
+		</a>
+		</div>
+		<div class="menu">
+			<a href="contact.html">contact</a>
+		</div>
+		<div class="menu">
+			<a href="sign_up.html">sign up</a>
+		</div>
+	</div>
+	<div id="main_content">
+		<img src="img/Coming.png" id="main-image" alt="Calendar Product">
+		<div id="text-1">
+			<h1>Make Your Life Easier to Manage</h1>
+		</div>
+		<div id="learn-more">
+			<a href="second_page.html">Learn More</a>
+		</div>
+	</div>
+	<div class="clearfloat"></div>
+	<div id="middle-content">
+		<div id="features">
+			<h2 id="text-2">More Than Just a Calendar</h2>
+			<div class="common-feature">
+				<hr>
+				<div class="number">
+					<p>1</p>
+				</div>
+				<div class="feature">
+					<p>Crowdsource Your Assignments</p>
+				</div>
+				<div class="more-info">
+					<p class="add">+</p>
+				</div>
+				<div class="description">
+					<p>Make it easier on everyone in your class and crowdsource your assignment while manually adding it in your schedule. You'll be helping your peers save time and we'll make sure fake assignments and events are removed from the system through our two submission approval process.</p>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<div class="common-feature">
+				<hr>
+				<div class="number">
+					<p>2</p>
+				</div>
+				<div class="feature">
+					<p>Check up on Your Friend's Mental Health</p>
+				</div>
+				<div class="more-info">
+					<p class="add">+</p>
+				</div>
+				<div class="description">
+					<p>Be able to see how your friends are feeling through the daily emoji checker. You can add your friends to your dashboard and even display your own emoji for the day. While being seperated from your college friends, it is more important than ever that you check up on each other's mental health.</p>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<div class="common-feature">
+				<hr>
+				<div class="number">
+					<p>3</p>
+				</div>
+				<div class="feature">
+					<p>Form Study Groups</p>
+				</div>
+				<div class="more-info">
+					<p class="add">+</p>
+				</div>
+				<div class="description">
+					<p>You can find peers in your class to study with when you crowdsource the session, so everyone in your class that benefits from peer review is able to come together on one zoom call. In a virtual format, its harder to form study sessions like you used to with peers that were sitting next to you in class. We make it easier than ever by bringing together individuals to get the job done.</p>
+				</div>
+			</div>
+		
+			<div class="clearfloat"></div>
+			<div class="common-feature">
+				<hr>
+				<div class="number">
+					<p>4</p>
+				</div>
+				<div class="feature">
+					<p>View All of Your Due Dates</p>
+				</div>
+				<div class="more-info">
+					<p class="add">+</p>
+				</div>
+			<div class="description" id="last-descript">
+				<p>The calendar on your dashboard allows you to see your assignments for all of your classes through the weekly view and the monthly view. You can cross your assignments off the todo list located right next your calendar and your finished assignments will automatically move to the completed assignment section. Organize your life better during the pandemic through AssignHub!</p>
+			</div>
+			<div class="clearfloat"></div>
+			<hr>
+			</div>
+		</div>
+		<div id="text-3">
+			<p>Features</p>
+		</div>
+	</div>
+	<div class="clearfloat"></div>
+	<div id="testimonials">
+		<div id="text-4">
+			<p>Testimonials</p>
+		</div>
+		<div id="people-op">
+			<h2 id="text-5">Here's What Our Users Say</h2>
+			<div class="clearfloat"></div>
+			<div class="testimonial-example">
+				<div class="horizontal">
+				<img src="img/aroofa.JPG" class="common-horizontal" alt="Testimonial #1: Aroofa">
+			</div>
+				<h3>Aroofa</h3>
+				<p>"I had a hard time finding a study group since all of our classes have gone online. I've been able to interact with peers in my class who I probably wouldn't have even talked to the entire semester because of this tool."</p>
+			</div>
+			<div class="testimonial-example">
+				<div class="horizontal">
+				<img src="img/riya.jpg" class="common-horizontal" alt="Testimonial #2: Riya">
+			</div>
+				<h3>Riya</h3>
+				<p>"I feel like I have more control over my life and schedule with this dashboard. This is one of the best products to use in an online learning environment."</p>
+			</div>
+			<div class="testimonial-example">
+				<div class="vertical">
+				<img src="img/alisha.JPG" class="common-img" alt="Testimonial #3: Alisha">
+			</div>
+				<h3>Alisha</h3>
+				<p>"The UI is much better than the blackboard calendar UI. The dashboard is easy to use. Every college should adopt this for their students."</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

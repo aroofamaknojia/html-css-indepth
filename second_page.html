@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="AssignHub, online calendar, students, BTG, mental health, study groups, crowdsource">
+	<meta name="description" content="AssignHub was founded in 2020 by four college students at USC. Our mission is to make your life easier to manage. Our values are to be mission-drive, hungry for innovation, and design-driven change">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+	<style>
+		#text-1{
+			position: relative;
+			width: 400px;
+			top: 260px;
+			left: 100px;
+			z-index: 1;
+			font-size: 30pt;
+			text-align: center;
+			color: #5d75bc;
+		}
+		#middle_content {
+			background-color: #E0E0E2;
+		}
+		#major-text {
+			width: 800px;
+			margin-left: auto;
+			margin-right:auto;
+			padding-top: 50px;
+			font-family: "Overpass Mono", monospace;
+			padding-bottom: 50px;
+		}
+		h2 {
+			color: #5D75BC;
+			font-family: "Century Gothic", monospace;
+		}
+		#text-3 {
+			font-size: 25pt;
+		}
+		#mission {
+			background-color: #B5BAD0;
+		}
+		#mission-text {
+			width: 800px;
+			background-color: #B5BAD0;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			font-size: 20pt;
+
+		}
+		#text-2 {
+			font-family: 'Lato', sans-serif;
+			color: #25283D;
+			font-size: 40pt;
+		}
+		#founders {
+			background-color: #FBB03B;
+		}
+		#more-info {
+			width: 1200px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background-color: #FBB03B;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.photo-holder {
+			width: 560px;
+			padding: 20px;
+			float: left;
+			background-color: #FBB03B;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			font-family: "Overpass Mono", monospace;
+		}
+		.vertical {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			border-radius: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.horizontal {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			border-radius: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.common-horizontal {
+			width: auto;
+			height: 100%;
+			margin-right: 50px;
+
+		}
+		.common-img {
+			border-color: #BFBFBF;
+			width: 100%;
+			height: auto;
+			margin-top: -25px;
+		}
+		#text-4 {
+			font-size: 25pt;
+			text-align: center;
+		}
+		.description-text {
+			width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: "Overpass Mono", monospace;
+		}
+		#values {
+			background-color: #E0E0E2;
+		}
+		#values-text {
+			background-color: #E0E0E2;
+			width: 1200px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#text-5 {
+			font-size: 25pt;
+			text-align: center;
+		}
+		.common-value {
+			width: 360px;
+			padding: 20px;
+			float: left;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			font-family: "Overpass Mono", monospace;
+		}
+		.icon {
+			width: 50%;
+		}
+		@media(max-width: 1024px){
+			#text-1 {
+				top: 175px;
+				left: 75px;
+				font-size: 20pt;
+			}
+			#more-info {
+				width: 800px;
+			}
+			.photo-holder {
+				width: 360px;
+
+			}
+			.description-text {
+				width: 300px;
+				font-size: 11pt;
+			}
+			#values-text {
+				width: 800px;
+			}
+			.common-value {
+				width: 226px;
+			}
+		}
+		@media(max-width: 768px) {
+			#text-1 {
+				top: 115px;
+				left: 65px;
+				font-size: 16pt;
+			}
+			#major-text {
+				width: 600px;
+			}
+			#mission-text {
+				width: 600px;
+			}
+			#more-info {
+				width: 600px;
+			}
+			.photo-holder {
+				width: 260px;
+			}
+			.description-text {
+				width: 250px;
+			}
+			#values-text {
+				width: 600px;
+			}
+			.common-value {
+				width: 156px;
+			}
+			#text-2 {
+				font-size: 30pt;
+			}
+		}
+		@media(max-width: 425px) {
+			#text-1 {
+				top: 50px;
+				left: 45px;
+				font-size: 12pt;
+			}
+			#major-text {
+				width: 350px;
+				font-size: 6pt;
+				padding: 25px;
+			}
+			#text-3 {
+				font-size: 15pt;
+			}
+			#mission-text {
+				width: 400px;
+				font-size: 18pt;
+			}
+			#text-2 {
+				font-size: 20pt;
+			}
+			#more-info {
+				width: 400px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.photo-holder {
+				float: none;
+				text-align: center;
+			}
+			#values-text {
+				width: 400px;
+			}
+			.common-value {
+				float: none;
+
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="menu">
+			<a href="homepage.html">home</a>
+		</div>
+		<div class="menu">
+			<a href="second_page.html">about</a>
+		</div>
+		<div class="menu" id="logo_style">
+			<a href="homepage.html">
+			<img src="img/AssignHubLogo.png" id="logo" alt="Assign Hub Logo">
+		</a>
+		</div>
+		<div class="menu">
+			<a href="contact.html">contact</a>
+		</div>
+		<div class="menu">
+			<a href="sign_up.html">sign up</a>
+		</div>
+	</div>
+	<div id="main_content">
+		<img src="img/workspace.png" id="main-image" alt="Personal Workspace">
+		<div id="text-1">
+			<h1>Our Story</h1>
+		</div>
+	</div>
+	<div class="clearfloat"></div>
+	<div id="middle_content">
+		<div id="major-text">
+		<h2 id="text-3">The Beginnings of Something Revolutionary</h2>
+		<p>AssignHub was founded in 2020 by a group of four USC students, Aroofa Maknojia, Jonathan Liu, Steven Gong, and Alishaa Khoslaa. We all started off as new recruits together in Business Tech Group (BTG) where we were tasked to build new technologies that would solve problems brought by the pandemic in various industries.</p>
+		<p>From the very beginning, we've always been driven to create a lasting solution that would help our peers stay organized and improve their mental health. The calendar options available for students by USC through Blackboard had been insufficient for the heavy workload that students had in an online environment. As students ourselves, we were frustrated by the time-consuming process of manually inputting all of our assignments for each of our classes based on our syllabi. Oftentimes, professors would add, remove, or alter assignments in the middle of the semester that we would also have to remember to change in our personal calendars. There had to be an easier way to simplify this process. And that's when AssignHub manifested.</p>
+		<p>Through AssignHub we hope to make college students lives easier by providing a platform where they can view all of their assignments with ease grouped by the classes they are taking. The crowdsourcing feature allows students to add assignments for each of their classes without having to manually input them in which will truly save students so much time. At the end of the day, our focus has always been on improving our peer's mental health. The remote environment has stripped many student's of their social lives and we wanted to make sure our peers continue to have a place where they can check up on their friend's mental health. With a click of a button, every student can share how they are feeling through an emoji and they can see their friend's emotions too.</p>
+		<p>We hope that our solution will save you time that you can use on yourself. No matter how busy you are, always remember that your mental health should always take priority.</p>
+	</div>
+	</div>
+	<div class="clearfloat"></div>
+	<div id="mission">
+		<div id="mission-text">
+			<h2>Our Mission Is To</h2>
+			<p id="text-2">Make Your Life Easier to Manage</p>
+		</div>
+	</div>
+	<div class="clearfloat"></div>
+	<div id="founders">
+		<div id="more-info">
+			<h2 id="text-4">Our Founders</h2>
+			<div class="photo-holder">
+				<div class="vertical">
+					<img src="img/aroofa_founder.JPG" class="common-img" alt="Aroofa Maknojia">
+				</div>
+				<h3>Aroofa Maknojia</h3>
+				<div class="description-text">
+				<p>Aroofa Maknojia is one of the co-founders for AssignHub. She is currently a sophomore studying Business Administration at the Marshall School of Business at USC. She is also studying Applied Analytics and Web Technologies and Applications through the ITP program.</p>
+			</div>
+			</div>
+			<div class="photo-holder">
+				<div class="vertical">
+					<img src="img/jonathan.jpeg" class="common-img" alt="Jonathan Liu">
+				</div>
+				<h3>Jonathan Liu</h3>
+				<div class="description-text">
+				<p>Jonathan Liu is one of the co-founders for AssignHub. He is currently a freshman studying Computer Science and Business Administration (CSBA) through the Viterbi School of Engineering.</p>
+			</div>
+			</div>
+			<div class="clearfloat"></div>
+			<div class="photo-holder">
+				<div class="horizontal">
+					<img src="img/steven.jpeg" class="common-horizontal" alt="Steven Gong">
+				</div>
+				<h3>Steven Gong</h3>
+				<div class="description-text">
+				<p>Steven Gong is one of the co-founders for AssignHub. He is currently a junior studying Communications through the Annenberg School of Journalism. He is also studying Applied Analytics and Computer Programming through the ITP program.</p>
+			</div>
+			</div>
+			<div class="photo-holder">
+				<div class="vertical">
+					<img src="img/alishaa.jpeg" class="common-img" alt="Alishaa Khoslaa">
+				</div>
+				<h3>Alishaa Khoslaa</h3>
+				<div class="description-text">
+				<p>Alishaa Khoslaa is one of the co-founders for AssignHub. She is currently a sophomore studying Computer Science and Business Administration (CSBA) through the Viterbi School of Engineering.</p>
+			</div>
+			</div>
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+	<div id="values">
+		<div id="values-text">
+			<h2 id="text-5">Our Values</h2>
+			<div class="common-value">
+				<img src="img/target.png" class="icon" alt="Mission-Driven">
+				<h3>Mission-Driven</h3>
+			</div>
+			<div class="common-value">
+				<img src="img/idea.png" class="icon" alt="Innovation">
+				<h3>Hunger for Innovation</h3>
+			</div>
+			<div class="common-value">
+				<img src="img/paint-palette.png" class="icon" alt="Design">
+				<h3>Design-Driven Change</h3>
+			</div>
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+	</body>
+</html>

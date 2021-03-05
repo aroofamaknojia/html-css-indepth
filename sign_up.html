@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="AssignHub, online calendar, students, BTG, mental health, study groups, crowdsource">
+	<meta name="description" content="Get AssignHub now by signing up for the application. You will get access to a dashboard that has crowdsourcing features, a to-do list, and checks up on your mental health everyday. All you have to enter is your name, email, and school name.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign Up for AssignHub</title>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+	<style>
+		.main-label {
+			display: block;
+			float: left;
+			width: 600px;
+			font-size: 15pt;
+			color: #5D75BC;
+		}
+		.form-row {
+			padding: 25px;
+			text-align: left;
+		}
+		#main-form {
+			margin-left: auto;
+			margin-right: auto;
+			width: 600px;
+			background-color: #E0E0E2;
+			padding: 50px;
+		}
+		#text-1{
+			position: relative;
+			width: 400px;
+			top: 150px;
+			left: 100px;
+			z-index: 1;
+			font-size: 25pt;
+			text-align: center;
+			color: #5d75bc;
+		}
+		#main-text {
+			background-color: #E0E0E2;
+		}
+		button {
+			width: 250px;
+			font-size: 15pt;
+			font-weight: bold;
+			padding: 10px 20px;
+			border-radius: 10px;
+			background-color: #25283D;
+			color: #E0E0E2;
+			font-family: "Overpass Mono", monospace;
+			margin-left: 150px;
+		}
+		h2 {
+			text-align: center;
+			color: #5D75BC;
+			font-size: 25pt;
+		}
+		#school-id {
+			width: 600px;
+			height: 25px;
+			font-family: "Overpass Mono", monospace;
+			border: 1pt solid #25283D;
+		}
+		@media(max-width:1024px) {
+			#text-1 {
+				font-size: 16pt;
+				top: 100px;
+				left: 100px;
+			}
+		}
+		@media(max-width:768px) {
+			#text-1 {
+				font-size: 12pt;
+				top: 75px;
+				left: 65px;
+			}
+			#school-id {
+				width: 500px;
+			}
+			button {
+				margin-left: 100px;
+			}
+			#main-form {
+				width: 500px;
+			}
+		}
+		@media(max-width: 425px) {
+			#text-1 {
+				font-size: 6pt;
+				top: 50px;
+				left: 30px;
+				width: 200px;
+				margin: 0px;
+				padding: 0px;
+			}
+			#school-id {
+				width: 300px;
+			}
+			button {
+				width: 150px;
+				margin-left: 75px;
+				font-size: 10pt;
+
+			}
+			#main-form {
+				width: 300px;
+				padding: 25px;
+				padding-left: 0px;
+			}
+			h2 {
+				font-size: 16pt;
+			}
+			.main-label {
+				font-size: 12pt;
+			}
+			h1 {
+				margin: 0px;
+				padding: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="menu">
+			<a href="homepage.html">home</a>
+		</div>
+		<div class="menu">
+			<a href="second_page.html">about</a>
+		</div>
+		<div class="menu" id="logo_style">
+		<a href="homepage.html">
+			<img src="img/AssignHubLogo.png" id="logo" alt="Assign Hub Logo">
+		</a>
+		</div>
+		<div class="menu">
+			<a href="contact.html">contact</a>
+		</div>
+		<div class="menu">
+			<a href="sign_up.html">sign up</a>
+		</div>
+	</div>
+	<div id="main_content">
+		<img src="img/signup.png" id="main-image" alt="Sign up">
+		<div id="text-1">
+			<h1>Move Forward with AssignHub</h1>
+		</div>
+	</div>
+	<div class="clearfloat"></div>
+	<div id="main-text">
+	<div id="main-form">
+		<h2>Sign Up Now</h2>
+	<form action="second_confirmation.html">
+		<div class="form-row">
+			<label for="fname-id" class="main-label">First Name</label>
+			<input type="text" id="fname-id" placeholder="Jane">
+		</div>
+		<div class="form-row">
+			<label for="lname-id" class="main-label">Last Name</label>
+			<input type="text" id="lname-id" placeholder="Doe">
+		</div>
+		<div class="form-row">
+			<label for="email-id" class="main-label">Email</label>
+			<input type="email" id="email-id" placeholder="janedoe@gmail.com">
+		</div>
+		<div class="form-row">
+			<label for="school-id" class="main-label">School</label>
+			<select id="school-id">
+				<option disabled selected>Choose one</option>
+				<option>USC</option>
+				<option>Stanford</option>
+				<option>UCLA</option>
+				<option>UC Berkeley</option>
+				<option>UC Davis</option>
+				<option>UC Irvine</option>
+				<option>UC San Diego</option>
+				<option>UC Santa Barbara</option>
+				<option>UC Riverside</option>
+				<option>UC Santa Cruz</option>
+				<option>Pomona College</option>
+				<option>California Polytechnic State University</option>
+				<option>CSU Long Beach</option>
+				<option>CSU Fullerton</option>
+				<option>CSU Sacramento</option>
+				<option>San Diego State University</option>
+				<option>Cal Poly Pomona</option>
+				<option>California Institute of Technology</option>
+			</select>
+		</div>
+		<div class="form-row">
+			<button type="submit" id="submit-button">Submit</button>
+		</div>
+	</form>
+</div>
+</div>
+		<div class="clearfloat"></div>
+	</body>
+</html>

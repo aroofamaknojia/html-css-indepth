@@ -1,0 +1,145 @@
+@font-face {
+			font-family: "Century Gothic";
+			src: url("font/century-gothic-grassetto.ttf");
+		}
+		#header {
+			height: 50px;
+			width: auto;
+			color: #5D75BC;
+			font-size: 14pt;
+		}
+		html {
+			margin: 0px;
+			padding: 0px;
+			overflow-x: hidden;
+		}
+		body {
+			margin: 0px;
+			padding: 0px;
+			font-family: "Century Gothic", monospace;
+			background-color: white;
+			overflow-x: hidden;
+		}
+		.menu {
+			width: 248px;
+			float: left;
+			text-align: center;
+			line-height: 50px;
+			padding: 20px;
+		}
+		.menu a {
+			text-decoration: none;
+			color: #5D75BC;
+			width: 248px;
+			float: left;
+			text-align: center;
+			line-height: 50px;
+			padding: 20px;
+		}
+		.menu a:hover {
+			text-decoration: none;
+			text-decoration: underline;
+			text-decoration-color: #FBB03B;
+			color: #25283D;
+
+		}
+		.menu:hover {
+			text-decoration: underline;
+			text-decoration-color: #FBB03B;
+			color: #25283D;
+		}
+
+		#logo {
+			width: 65%;
+		}
+		.clearfloat {
+			clear: both;
+		}
+		#fname-id {
+			width: 600px;
+			height: 25px;
+			font-family: "Overpass Mono", monospace;
+			border: 1pt solid #25283D;
+		}
+		#lname-id {
+			width: 600px;
+			height: 25px;
+			font-family: "Overpass Mono", monospace;
+			border: 1pt solid #25283D;
+		}
+		#email-id {
+			width: 600px;
+			height: 25px;
+			font-family: "Overpass Mono", monospace;
+			border: 1pt solid #25283D;
+		}
+		#main-image {
+			width: 75%;
+			display: block;
+			border: 1px solid #D9B448;
+			float: right;
+		}
+		@media(max-width: 1024px) {
+			.menu {
+				width: 164.8px;
+			}
+			.menu a{
+				width: 164.8px;
+			}
+			#logo {
+				width: 90%;
+			}
+		}
+		@media(max-width: 768px) {
+			.menu {
+				width: 123.6px;
+				padding: 10px;
+			}
+			.menu a{
+				width: 123.6px;
+				padding: 10px;
+			}
+			#logo {
+				width: 85%;
+				left: 20px;
+			}
+			#fname-id {
+				width: 500px;
+			}
+			#lname-id {
+				width: 500px;
+			}
+			#email-id {
+				width: 500px;
+			}
+		}
+		@media(max-width: 425px) {
+			#header {
+				font-size: 10pt;
+
+			}
+			.menu {
+				width: 65px;
+				padding: 10px;
+				font-size: 10pt;
+			}
+			.menu a{
+				width: 65px;
+				padding: 10px;
+				font-size: 10pt;
+			}
+			#logo {
+				width: 100%;
+				top: 15px;
+				left: 10px;
+			}
+			#fname-id {
+				width: 300px;
+			}
+			#lname-id {
+				width: 300px;
+			}
+			#email-id {
+				width: 300px;
+			}
+		}
